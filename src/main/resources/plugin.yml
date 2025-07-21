@@ -1,0 +1,13 @@
+name: McsmCmdPlugin
+version: ${version}
+main: top.brmc.mcsmcmd.McsmCmdPlugin
+api-version: 1.20
+commands:
+  mcsmcmd:
+    description: 向 MCSM 子服或组发送指令，或重载配置
+    usage: /mcsmcmd <子服|组> <命令> 或 /mcsmcmd reload
+    permission: mcsmcmd.use
+permissions:
+  mcsmcmd.use:
+    description: Allows sending commands to MCSM
+    default: op

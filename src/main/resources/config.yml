@@ -1,0 +1,10 @@
+mcsm:
+  api_url: "http://127.0.0.1:23333/"
+  api_key: "your-api-key"
+  instances:
+    lobby: { uuid: "uuid-123", daemonId: "daemon-1" }
+    game1: { uuid: "uuid-456", daemonId: "daemon-2" }
+  groups:
+    gameservers:
+      - "lobby"
+      - "game1"
